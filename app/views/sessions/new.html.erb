@@ -1,0 +1,22 @@
+<body class="bg">
+<div class="text-center">
+
+  <h1>Log in</h1>
+
+<%= form_with url: sessions_new_path, local: true do |f| %>
+
+<div class="field">
+  <%= f.email_field :email, placeholder: "email" %>
+</div>
+
+<div class="field">
+  <%= f.password_field :password, placeholder: "password" %>
+</div>
+
+<div class="actions">
+  <%= f.submit "Log in" %>
+</div>
+<% end %>
+
+</div>
+</body>
